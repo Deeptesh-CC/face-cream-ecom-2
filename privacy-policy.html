@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1"
+    />
+    
+    <title>Face Cream</title>
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
+      rel="stylesheet"
+    />
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body>
+
+    <div id="cart-modal" class="xs-sidebar-group info-group info-sidebar">
+      <div class="xs-overlay xs-bg-black"></div>
+      <div class="xs-sidebar-widget">
+          <div class="sidebar-widget-container">
+              <div class="widget-heading">
+                  <a href="#" class="close-side-widget">X</a>
+              </div>
+              <div class="sidebar-textwidget">
+                  <div class="sidebar-info-contents">
+                      <div class="content-inner">
+                        <div id="cart-items">
+                          
+                        </div>
+                        <div id="cart-total-area">
+                        <p class="mb-0 mt-3 p-2 rounded-3 text-center bg-light border">Total: $<strong id="cart-total">0</strong></p>
+                          <a href="checkout.html" class="thm-btn w-100 mt-3">Checkout</a>
+                      </div>
+                      </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <header id="header">
+    <div class="pbmit-pre-header-wrapper pbmit-bg-color-white">
+      <div class="container">
+          <div class="d-sm-flex justify-content-between">
+              <div class="pbmit-pre-header-left d-md-inline-block">
+                  <ul class="pbmit-contact-info text-center text-sm-start">
+                      <li class="ps-0"><img class="me-2" src="assets/images/icons/Phone call.svg" width="17"><a href="tel:+1 43457 87906">+1 43457 87906</a></li>
+                      
+                  </ul>
+              </div>
+              <div class="pbmit-pre-header-right d-flex">
+                Share Now :
+                  <ul class="pbmit-contact-info social" id="socialShare">
+                  
+                      <!-- <li><a href="#"><img src="assets/images/icons/app.svg" width="17" class="me-1"> App
+                        
+                        </a> </li>
+                      <li><a href="#"><img src="assets/images/icons/locate-store.svg" width="13" class="me-1"> Locate Store
+                        
+                        </a> </li>
+                        <li><a href="#"><img src="assets/images/icons/Gift.svg" width="17" class="me-1"> Gift Vouchers</a> </li>
+                     
+                        <li><a href="#"><img src="assets/images/icons/Headphones.svg" width="17" class="me-1"> Support</a> </li> -->
+                  </ul>
+              </div>
+          </div>
+      </div>
+  </div>
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="assets/images/LOGO.png" class="img-fluid" width="147" />
+      </a>
+      <div class="d-flex navbar-action-btns">
+        <li class="nav-item dropdown profile-menu" style="list-style: none;">
+          <a class="nav-link dropdown-toggle p-2 pt-0 pb-0 ps-0" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <div class="profile-pic">
+                <img src="assets/images/icons/User.svg" alt="Profile Picture" width="25">
+             </div>
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="login.html"><i class="fas fa-sign-in-alt"></i> Log In</a></li>
+        
+            <li><a class="dropdown-item" href="register.html"><i class="fas fa-user"></i> Register</a></li>
+          </ul>
+        </li>
+
+      <a href="#" class="search-toggler">
+        <img
+          src="assets/images/icons/Search.svg"
+          class="img-fluid mx-2"
+          width="25"
+        />
+      </a>
+      <a href="" class="navSidebar-button position-relative">
+        <span id="cart-count" class="cart-count">0</span>
+        <img
+          src="assets/images/icons/Shopping cart.svg"
+          class="img-fluid mx-2"
+          width="25"
+        />
+      </a>
+      </div>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto me-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about-us.html">About Us</a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle default-icon-none" href="products.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+             Products <small><i class="fas fa-chevron-down"></i></small>
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="make-up-products.html">Make Up</a></li>
+              <li><a class="dropdown-item" href="skin-products.html">Skin Care</a></li>
+              <li><a class="dropdown-item" href="hair-products.html">Hair Care</a></li>
+              <li><a class="dropdown-item" href="bathing-products.html">Body & bath</a></li>
+            </ul>
+          </li>    
+              
+          <li class="nav-item">
+            <a class="nav-link" href="blogs.html">        
+          Blogs
+          </a>
+          </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact-us.html">        
+              Contact Us
+              </a>
+              </li>
+        </ul>
+      </div>
+      
+    </div>
+  </nav>
+</header>
+
+  <section class="main-title-section-wrapper">
+    <div class="main-title-section-container">
+        <div class="container">
+            <div class="main-title-section"><h1>Terms of Services</h1></div>
+            <div class="breadcrumb"><a href="index.html">Home</a><span class="breadcrumb-default-delimiter"></span><span class="current">Terms of Service</span></div>        </div>
+    </div>
+    <div class="main-title-section-bg"></div>
+</section>
+
+<section class="section-gap section-gap-bottom">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h2>1. Introduction</h2>
+    <p>Welcome to [Your eCommerce Website Name] ("we", "our", "us"). We are committed to protecting your privacy. This Privacy Policy explains how we collect, use, and share your personal information when you visit or make a purchase from <a href="[yourwebsite.com]">[yourwebsite.com]</a> (the “Site”).</p>
+    <p>By using our website, you agree to the collection and use of information in accordance with this Privacy Policy.</p>
+
+    <h2>2. Information We Collect</h2>
+
+    <h3>2.1 Personal Information</h3>
+    <p>When you visit the Site, we collect certain information about your device, your interaction with the Site, and information necessary to process your purchases. We may also collect additional information if you contact us for customer support. This may include, but is not limited to:</p>
+    <ul>
+        <li>Your name, email address, billing and shipping address, phone number, and payment information (credit/debit card numbers or other financial data).</li>
+        <li>Order history and preferences.</li>
+    </ul>
+
+    <h3>2.2 Automatically Collected Information</h3>
+    <p>We also automatically collect certain information when you visit our Site, including:</p>
+    <ul>
+        <li>IP address, browser type, device information, and operating system.</li>
+        <li>Referring website, pages viewed, and the date and time of visits.</li>
+        <li>Interaction data (such as clicks, browsing behavior).</li>
+    </ul>
+
+    <h3>2.3 Cookies and Tracking Technologies</h3>
+    <p>We use cookies and other tracking technologies to enhance your browsing experience, analyze site traffic, and understand how visitors engage with the website. You can manage your cookie preferences in your browser settings.</p>
+
+    <h2>3. How We Use Your Information</h2>
+    <p>We use the information we collect for the following purposes:</p>
+    <ul>
+        <li><strong>Processing Orders:</strong> To fulfill and deliver your orders, process payments, and provide customer support.</li>
+        <li><strong>Communication:</strong> To send you order updates, marketing emails, newsletters, and other relevant communications (with your consent).</li>
+        <li><strong>Personalization:</strong> To tailor the content and recommendations displayed to you on our website based on your preferences and browsing behavior.</li>
+        <li><strong>Improvement of Services:</strong> To analyze usage patterns, improve the website’s functionality, and enhance user experience.</li>
+        <li><strong>Security:</strong> To protect against fraud, unauthorized transactions, and ensure the security of our services.</li>
+    </ul>
+
+    <h2>4. Sharing Your Information</h2>
+    <p>We do not sell or rent your personal information to third parties. However, we may share your data with trusted third-party service providers for the following purposes:</p>
+    <ul>
+        <li><strong>Payment Processors:</strong> To process payments securely.</li>
+        <li><strong>Shipping Providers:</strong> To deliver your orders.</li>
+        <li><strong>Marketing Platforms:</strong> To manage email campaigns and digital advertising (e.g., Google Ads, Facebook Ads).</li>
+        <li><strong>Analytics Services:</strong> To analyze site traffic and usage (e.g., Google Analytics).</li>
+    </ul>
+    <p>These third-party providers have access to your personal information only to perform specific tasks on our behalf and are obligated not to disclose or use it for any other purpose.</p>
+
+    <h2>5. Data Retention</h2>
+    <p>We will retain your personal information only for as long as is necessary for the purposes set out in this Privacy Policy. This includes retaining your data to comply with legal obligations, resolve disputes, and enforce our agreements. Once no longer needed, your personal data will be securely deleted or anonymized.</p>
+
+    <h2>6. Your Rights</h2>
+    <p>Depending on your jurisdiction, you may have the following rights regarding your personal data:</p>
+    <ul>
+        <li><strong>Access:</strong> Request a copy of the information we hold about you.</li>
+        <li><strong>Rectification:</strong> Request that we correct any inaccurate or incomplete information.</li>
+        <li><strong>Erasure:</strong> Request that we delete your personal data under certain circumstances.</li>
+        <li><strong>Object:</strong> Object to the processing of your personal data for marketing or other purposes.</li>
+        <li><strong>Data Portability:</strong> Request a copy of your data in a commonly used format.</li>
+        <li><strong>Withdraw Consent:</strong> If you have provided consent to the processing of your data, you have the right to withdraw it at any time.</li>
+    </ul>
+    <p>To exercise any of these rights, please contact us at [Your Contact Information].</p>
+
+    <h2>7. Data Security</h2>
+    <p>We take reasonable steps to protect your personal information from unauthorized access, use, or disclosure by using encryption and secure servers. However, please be aware that no method of transmission over the Internet or electronic storage is completely secure, and we cannot guarantee absolute security.</p>
+
+    <h2>8. Children's Privacy</h2>
+    <p>Our services are not directed to individuals under the age of 18. We do not knowingly collect personal information from children. If we become aware that we have collected information from a child without parental consent, we will take steps to remove that information promptly.</p>
+
+    <h2>9. Third-Party Links</h2>
+    <p>Our Site may contain links to third-party websites or services that are not operated by us. This Privacy Policy does not apply to those third-party websites. We recommend reviewing the privacy policies of any third-party sites you visit.</p>
+
+    <h2>10. Changes to This Privacy Policy</h2>
+    <p>We may update this Privacy Policy from time to time to reflect changes in our practices or for other operational, legal, or regulatory reasons. Any changes will be posted on this page, and the updated policy will take effect immediately upon posting.</p>
+
+    <h2>11. Contact Us</h2>
+    <p>If you have any questions or concerns about this Privacy Policy or how we handle your personal data, please contact us at:</p>
+    <ul>
+        <li><strong>Email:</strong> [Your Email Address]</li>
+        <li><strong>Phone:</strong> [Your Phone Number]</li>
+        <li><strong>Mailing Address:</strong> [Your Physical Address]</li>
+    </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+      <div class="footer-top-area">
+      <div class="row">
+        <div class="col-sm-10 col-md-8 col-lg-7 col-xl-4">
+          <div class="logo-widget">
+            <img src="assets/images/LOGO.png" class="img-fluid logo" alt="" width="147">
+            <h2>Emails that people love</h2>
+              <p>ed dignissim lacinia nunc. Curabitur tortor.
+                Pellentesque nibh. Aenean quam.</p>
+            <div class="subs-form-area">
+                <form class="d-flex align-items-center">
+                <input type="text" name="" placeholder="Enter Email" class="form-control" required>
+                <button type="submit" class="thm-btn">Subscribe</button>
+              </form>
+            </div>
+            <img src="assets/images/icons/payments.svg" alt="" class="mt-md-4 mt-4 mb-5 mb-xl-0">
+          </div>
+        </div>
+        <div class="col-xl-7 offset-xl-1">
+          <div class="row row-cols-2 row-cols-sm-3 row-cols-xl-3">
+            <div class="col">
+              <div class="widget-links">
+                <h4 class="mb-3">Quick Links</h4>
+                <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="about-us.html">About Us</a></li>
+                  <li><a href="products.html">Products</a></li>
+                  <li><a href="blogs.html">Blogs</li>
+                  <li><a href="faq.html">FAQ</a></li>
+                  <li><a href="contact-us.html">Contact Us</a></li>
+                  
+                  </ul>
+              </div>
+            </div>
+            <div class="col">
+              <div class="widget-links">
+                <h4 class="mb-3">Help</h4>
+                <ul>
+                  <li><a href="return-policy.html">Return Policy</a></li>
+                  <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                  <li><a href="shipping-policy.html">Shipping Policy</a></li>
+                  <li><a href="terms.html">Terms of Service</a></li>
+                  <li><a href="faq.html">FAQ</li>
+                  <li><a href="login.html">Account Login</a></li>
+                  <li><a href="register.html">Register</a></li>
+                  </ul>
+              </div>
+            </div>
+            <div class="col">
+              <div class="widget-links">
+                <h4 class="mb-3">Shop</h4>
+                <ul>
+                  <li><a href="make-up-products.html">Make Up</a></li>
+                  <li><a href="skin-products.html">Skin Care</a></li>
+                  <li><a href="hair-products.html">Hair Care</a></li>
+                  <li><a href="bathing-products.html">Body &amp; bath</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+     </div>
+     <div class="footer-bottom-bar">
+      <div class="row">
+        <div class="col-sm-6">
+            <p class="mb-2 mb-sm-0 text-sm-start text-center">© 2024 All Rights Reserved</p>
+        </div>
+        <div class="col-sm-6">
+          <ul class="text-sm-end text-center"><li class="d-inline-block px-2"><a href="privacy-policy.html">Privacy Policy</a> </li>
+            |
+             <li class="d-inline-block px-2"><a href="terms.html">Terms</a></li>
+            </ul>
+        </div>
+      </div>
+     </div>
+    </div>
+  </footer>
+
+    <div class="search-popup">
+      <div class="search-popup__overlay search-toggler"></div>
+      <!-- /.search-popup__overlay -->
+      <div class="search-popup__content">
+          <form action="#">
+          
+              <input type="text" class="form-control" placeholder="Search Here...">
+              <button type="submit" aria-label="search submit" class="thm-btn">
+                  <img src="assets/images/icons/Search.svg" alt="" class="">
+              </button>
+          </form>
+      </div>
+      <!-- /.search-popup__content -->
+  </div>
+
+    <script src="assets/js/jquery-3.7.1.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/jquery.marquee.min.js"></script>
+    <script src="assets/js/jquery-sidebar-content.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/socialSharing.js"></script>
+    <script src="assets/js/main.js"></script>
+
+  </body>
+</html>

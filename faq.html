@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1"
+    />
+    
+    <title>Face Cream</title>
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
+      rel="stylesheet"
+    />
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body>
+
+    <div id="cart-modal" class="xs-sidebar-group info-group info-sidebar">
+      <div class="xs-overlay xs-bg-black"></div>
+      <div class="xs-sidebar-widget">
+          <div class="sidebar-widget-container">
+              <div class="widget-heading">
+                  <a href="#" class="close-side-widget">X</a>
+              </div>
+              <div class="sidebar-textwidget">
+                  <div class="sidebar-info-contents">
+                      <div class="content-inner">
+                        <div id="cart-items">
+                          
+                        </div>
+                        <div id="cart-total-area">
+                        <p class="mb-0 mt-3 p-2 rounded-3 text-center bg-light border">Total: $<strong id="cart-total">0</strong></p>
+                          <a href="checkout.html" class="thm-btn w-100 mt-3">Checkout</a>
+                      </div>
+                      </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+
+    <header id="header">
+      <div class="pbmit-pre-header-wrapper pbmit-bg-color-white">
+        <div class="container">
+            <div class="d-sm-flex justify-content-between">
+                <div class="pbmit-pre-header-left d-md-inline-block">
+                    <ul class="pbmit-contact-info text-center text-sm-start">
+                        <li class="ps-0"><img class="me-2" src="assets/images/icons/Phone call.svg" width="17"><a href="tel:+1 43457 87906">+1 43457 87906</a></li>
+                        
+                    </ul>
+                </div>
+                <div class="pbmit-pre-header-right d-flex">
+                  Share Now :
+                    <ul class="pbmit-contact-info social" id="socialShare">
+                    
+                        <!-- <li><a href="#"><img src="assets/images/icons/app.svg" width="17" class="me-1"> App
+                          
+                          </a> </li>
+                        <li><a href="#"><img src="assets/images/icons/locate-store.svg" width="13" class="me-1"> Locate Store
+                          
+                          </a> </li>
+                          <li><a href="#"><img src="assets/images/icons/Gift.svg" width="17" class="me-1"> Gift Vouchers</a> </li>
+                       
+                          <li><a href="#"><img src="assets/images/icons/Headphones.svg" width="17" class="me-1"> Support</a> </li> -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img src="assets/images/LOGO.png" class="img-fluid" width="147" />
+        </a>
+        <div class="d-flex navbar-action-btns">
+          <li class="nav-item dropdown profile-menu" style="list-style: none;">
+            <a class="nav-link dropdown-toggle p-2 pt-0 pb-0 ps-0" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <div class="profile-pic">
+                  <img src="assets/images/icons/User.svg" alt="Profile Picture" width="25">
+               </div>
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="login.html"><i class="fas fa-sign-in-alt"></i> Log In</a></li>
+          
+              <li><a class="dropdown-item" href="register.html"><i class="fas fa-user"></i> Register</a></li>
+            </ul>
+          </li>
+
+        <a href="#" class="search-toggler">
+          <img
+            src="assets/images/icons/Search.svg"
+            class="img-fluid mx-2"
+            width="25"
+          />
+        </a>
+        <a href="" class="navSidebar-button position-relative">
+          <span id="cart-count" class="cart-count">0</span>
+          <img
+            src="assets/images/icons/Shopping cart.svg"
+            class="img-fluid mx-2"
+            width="25"
+          />
+        </a>
+        </div>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto me-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about-us.html">About Us</a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle default-icon-none" href="products.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+               Products <small><i class="fas fa-chevron-down"></i></small>
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="make-up-products.html">Make Up</a></li>
+                <li><a class="dropdown-item" href="skin-products.html">Skin Care</a></li>
+                <li><a class="dropdown-item" href="hair-products.html">Hair Care</a></li>
+                <li><a class="dropdown-item" href="bathing-products.html">Body & bath</a></li>
+              </ul>
+            </li>    
+                
+            <li class="nav-item">
+              <a class="nav-link" href="blogs.html">        
+            Blogs
+            </a>
+            </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contact-us.html">        
+                Contact Us
+                </a>
+                </li>
+          </ul>
+        </div>
+        
+      </div>
+    </nav>
+  </header>
+
+  <section class="main-title-section-wrapper">
+    <div class="main-title-section-container">
+        <div class="container">
+            <div class="main-title-section"><h1> Frequently Asked Questions</h1></div>
+            <div class="breadcrumb"><a href="index.html">Home</a><span class="breadcrumb-default-delimiter"></span><span class="current">Frequently Asked Questions</span></div>        </div>
+    </div>
+    <div class="main-title-section-bg"></div>
+</section>
+
+<section class="section-gap section-gap-bottom">
+    <div class="container">
+        <div class="section-title text-center">
+            <span class="">Frequently Asked Questions
+            </span>
+            <h2 class="">
+                Frequently Asked Questions
+              </h2>
+          </div>
+        <div class="accordion" id="accordionExample">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                        What payment methods do you accept?
+                      </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                        <p>We accept a variety of payment methods, including Visa, MasterCard, American Express, PayPal, and other major credit and debit cards. You can choose your preferred payment method at checkout.</p>
+                    </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        How do I track my order?
+                      </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                        <p>Once your order is shipped, we will send you a confirmation email with your tracking number. You can use the tracking number on the shipping provider’s website to monitor your delivery.</p>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        What is your return policy?
+                      </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                        <p>We offer a [X]-day return policy on most items. If you are not satisfied with your purchase, you can return the product in its original condition within [X] days for a full refund or exchange. Please refer to our Return Policy for more details.</p>
+                    </div>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="heading4">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapseOne">
+                        How long does shipping take?
+                      </button>
+                    </h2>
+                    <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                        <p>Shipping times depend on your location and the shipping method chosen at checkout. Standard shipping usually takes [X]-[X] business days, while expedited shipping options are available for faster delivery. Please review our Shipping Policy for more information.</p>
+                    </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="heading5">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapseTwo">
+                        Can I change or cancel my order?
+                      </button>
+                    </h2>
+                    <div id="collapse5" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                        <p>If you need to change or cancel your order, please contact our customer support team as soon as possible. We will do our best to accommodate your request, but once an order has been processed or shipped, we may not be able to make changes.</p>
+                    </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="heading6">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse6" aria-expanded="false" aria-controls="collapseThree">
+                        Do you ship internationally?
+                      </button>
+                    </h2>
+                    <div id="collapse6" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                        <p>Yes, we ship internationally to many countries. Shipping rates and times may vary depending on the destination. For more information, visit our International Shipping Policy page.</p>
+                        </div>
+                    </div>
+                  </div>
+            </div>
+            </div>
+            </div>
+        </div>
+</section>
+
+<footer>
+    <div class="container">
+      <div class="footer-top-area">
+      <div class="row">
+        <div class="col-sm-10 col-md-8 col-lg-7 col-xl-4">
+          <div class="logo-widget">
+            <img src="assets/images/LOGO.png" class="img-fluid logo" alt="" width="147">
+            <h2>Emails that people love</h2>
+              <p>ed dignissim lacinia nunc. Curabitur tortor.
+                Pellentesque nibh. Aenean quam.</p>
+            <div class="subs-form-area">
+                <form class="d-flex align-items-center">
+                <input type="text" name="" placeholder="Enter Email" class="form-control" required>
+                <button type="submit" class="thm-btn">Subscribe</button>
+              </form>
+            </div>
+            <img src="assets/images/icons/payments.svg" alt="" class="mt-md-4 mt-4 mb-5 mb-xl-0">
+          </div>
+        </div>
+        <div class="col-xl-7 offset-xl-1">
+          <div class="row row-cols-2 row-cols-sm-3 row-cols-xl-3">
+            <div class="col">
+              <div class="widget-links">
+                <h4 class="mb-3">Quick Links</h4>
+                <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="about-us.html">About Us</a></li>
+                  <li><a href="products.html">Products</a></li>
+                  <li><a href="blogs.html">Blogs</li>
+                  <li><a href="faq.html">FAQ</a></li>
+                  <li><a href="contact-us.html">Contact Us</a></li>
+                  
+                  </ul>
+              </div>
+            </div>
+            <div class="col">
+              <div class="widget-links">
+                <h4 class="mb-3">Help</h4>
+                <ul>
+                  <li><a href="return-policy.html">Return Policy</a></li>
+                  <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                  <li><a href="shipping-policy.html">Shipping Policy</a></li>
+                  <li><a href="terms.html">Terms of Service</a></li>
+                  <li><a href="faq.html">FAQ</li>
+                  <li><a href="login.html">Account Login</a></li>
+                  <li><a href="register.html">Register</a></li>
+                  </ul>
+              </div>
+            </div>
+            <div class="col">
+              <div class="widget-links">
+                <h4 class="mb-3">Shop</h4>
+                <ul>
+                  <li><a href="make-up-products.html">Make Up</a></li>
+                  <li><a href="skin-products.html">Skin Care</a></li>
+                  <li><a href="hair-products.html">Hair Care</a></li>
+                  <li><a href="bathing-products.html">Body &amp; bath</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+     </div>
+     <div class="footer-bottom-bar">
+      <div class="row">
+        <div class="col-sm-6">
+            <p class="mb-2 mb-sm-0 text-sm-start text-center">© 2024 All Rights Reserved</p>
+        </div>
+        <div class="col-sm-6">
+          <ul class="text-sm-end text-center"><li class="d-inline-block px-2"><a href="privacy-policy.html">Privacy Policy</a> </li>
+            |
+             <li class="d-inline-block px-2"><a href="terms.html">Terms</a></li>
+            </ul>
+        </div>
+      </div>
+     </div>
+    </div>
+  </footer>
+
+    <div class="search-popup">
+      <div class="search-popup__overlay search-toggler"></div>
+      <!-- /.search-popup__overlay -->
+      <div class="search-popup__content">
+          <form action="#">
+          
+              <input type="text" class="form-control" placeholder="Search Here...">
+              <button type="submit" aria-label="search submit" class="thm-btn">
+                  <img src="assets/images/icons/Search.svg" alt="" class="">
+              </button>
+          </form>
+      </div>
+      <!-- /.search-popup__content -->
+  </div>
+
+    <script src="assets/js/jquery-3.7.1.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/jquery.marquee.min.js"></script>
+    <script src="assets/js/jquery-sidebar-content.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/socialSharing.js"></script>
+    <script src="assets/js/main.js"></script>
+
+  </body>
+</html>

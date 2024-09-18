@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1"
+    />
+    
+    <title>Face Cream</title>
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
+      rel="stylesheet"
+    />
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body>
+
+    <div id="cart-modal" class="xs-sidebar-group info-group info-sidebar">
+      <div class="xs-overlay xs-bg-black"></div>
+      <div class="xs-sidebar-widget">
+          <div class="sidebar-widget-container">
+              <div class="widget-heading">
+                  <a href="#" class="close-side-widget">X</a>
+              </div>
+              <div class="sidebar-textwidget">
+                  <div class="sidebar-info-contents">
+                      <div class="content-inner">
+                        <div id="cart-items">
+                          
+                        </div>
+                        <div id="cart-total-area">
+                          <p class="mb-0 mt-3 p-2 rounded-3 text-center bg-light border">Total: $<strong id="cart-total">0</strong></p>
+                            <a href="checkout.html" class="thm-btn w-100 mt-3">Checkout</a>
+                        </div>
+                      
+                      </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <header id="header">
+    <div class="pbmit-pre-header-wrapper pbmit-bg-color-white">
+      <div class="container">
+          <div class="d-sm-flex justify-content-between">
+              <div class="pbmit-pre-header-left d-md-inline-block">
+                  <ul class="pbmit-contact-info text-center text-sm-start">
+                      <li class="ps-0"><img class="me-2" src="assets/images/icons/Phone call.svg" width="17"><a href="tel:+1 43457 87906">+1 43457 87906</a></li>
+                      
+                  </ul>
+              </div>
+              <div class="pbmit-pre-header-right d-flex">
+                Share Now :
+                  <ul class="pbmit-contact-info social" id="socialShare">
+                  
+                      <!-- <li><a href="#"><img src="assets/images/icons/app.svg" width="17" class="me-1"> App
+                        
+                        </a> </li>
+                      <li><a href="#"><img src="assets/images/icons/locate-store.svg" width="13" class="me-1"> Locate Store
+                        
+                        </a> </li>
+                        <li><a href="#"><img src="assets/images/icons/Gift.svg" width="17" class="me-1"> Gift Vouchers</a> </li>
+                     
+                        <li><a href="#"><img src="assets/images/icons/Headphones.svg" width="17" class="me-1"> Support</a> </li> -->
+                  </ul>
+              </div>
+          </div>
+      </div>
+  </div>
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="assets/images/LOGO.png" class="img-fluid" width="147" />
+      </a>
+      <div class="d-flex navbar-action-btns">
+        <li class="nav-item dropdown profile-menu" style="list-style: none;">
+          <a class="nav-link dropdown-toggle p-2 pt-0 pb-0 ps-0" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <div class="profile-pic">
+                <img src="assets/images/icons/User.svg" alt="Profile Picture" width="25">
+             </div>
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="login.html"><i class="fas fa-sign-in-alt"></i> Log In</a></li>
+        
+            <li><a class="dropdown-item" href="register.html"><i class="fas fa-user"></i> Register</a></li>
+          </ul>
+        </li>
+
+      <a href="#" class="search-toggler">
+        <img
+          src="assets/images/icons/Search.svg"
+          class="img-fluid mx-2"
+          width="25"
+        />
+      </a>
+      <a href="" class="navSidebar-button position-relative">
+        <span id="cart-count" class="cart-count">0</span>
+        <img
+          src="assets/images/icons/Shopping cart.svg"
+          class="img-fluid mx-2"
+          width="25"
+        />
+      </a>
+      </div>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto me-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about-us.html">About Us</a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle default-icon-none" href="products.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+             Products <small><i class="fas fa-chevron-down"></i></small>
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="make-up-products.html">Make Up</a></li>
+              <li><a class="dropdown-item" href="skin-products.html">Skin Care</a></li>
+              <li><a class="dropdown-item" href="hair-products.html">Hair Care</a></li>
+              <li><a class="dropdown-item" href="bathing-products.html">Body & bath</a></li>
+            </ul>
+          </li>    
+              
+          <li class="nav-item">
+            <a class="nav-link" href="blogs.html">        
+          Blogs
+          </a>
+          </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact-us.html">        
+              Contact Us
+              </a>
+              </li>
+        </ul>
+      </div>
+      
+    </div>
+  </nav>
+</header>
+
+
+
+  <section class="main-title-section-wrapper">
+    <div class="main-title-section-container">
+        <div class="container">
+            <div class="main-title-section"><h1>Fine And Smooth Organic
+              Face Pack</h1></div>
+            <div class="breadcrumb"><a href="index.html">Home</a><span class="breadcrumb-default-delimiter"></span><span class="current">Fine And Smooth Organic
+              Face Pack</span></div>        </div>
+    </div>
+    <div class="main-title-section-bg"></div>
+</section>
+
+<section class="section-gap section-gap-bottom blog-dtl-area">
+  <div class="container">
+
+<div class="row justify-content-center">
+  <div class="col-lg-8">
+    <div class="blog-image">
+      <img src="assets/images/blog-dtl-feat.webp" class="img-fluid w-100 rounded-3" alt="">
+    </div>
+   
+    <div class="post-meta">
+    	<!-- Meta Left -->
+    	<div class="meta-left">
+			
+<!-- Entry Author -->
+<div class="single-entry-author d-flex align-items-center">
+	<div class="meta-author-img">
+		<img alt="" src="https://secure.gravatar.com/avatar/ad8be3aaee77b6d140c08ac0645a0009?s=40&amp;d=mm&amp;r=g" srcset="https://secure.gravatar.com/avatar/ad8be3aaee77b6d140c08ac0645a0009?s=80&amp;d=mm&amp;r=g 2x" class="rounded-circle" height="40" width="40" loading="lazy" decoding="async">	</div>
+	<div class="meta-author-info ps-3">
+		<span><small>Written by</small></span>
+    <br>
+		<a href="#" title="View all posts by Admin"><strong>Admin</strong></a>
+    </div>
+</div><!-- Entry Author -->    	</div><!-- Meta Left -->
+    	<!-- Meta Right -->
+    	<div class="meta-right">
+			
+<!-- Entry Date -->
+<div class="single-entry-date">Jun 26, 2023</div><!-- Entry Date -->        </div>
+    </div>
+
+    <div class="content-area">
+    <p>Quisque lacinia molestie erat, vitae tincidunt ligula efficitur et. Mauris egestas laoreet neque, quis maximus nisl consequat a. Nam sed rhoncus massa. Sed vulputate massa ac justo scelerisque, lobortis tincidunt tortor blandit. Proin posuere in mauris ut dapibus. Donec posuere, nulla et tristique varius, metus sem commodo nisl, eget aliquam mi arcu vel risus. Duis a commodo nibh. Integer dictum, ligula eget semper sollicitudin, quam nisl tempor massa, vitae scelerisque metus neque sit amet nulla. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nulla ac gravida lacus, et semper lectus. Morbi rhoncus, augue vestibulum maximus molestie, ante nunc vestibulum massa, lobortis molestie purus metus at tortor. Morbi consectetur vehicula tellus, non pellentesque libero hendrerit at. Nulla vel varius justo, sit amet dignissim erat. Phasellus laoreet orci sit amet nisi mollis convallis.</p>
+
+<p>Pellentesque ultricies, enim et aliquet scelerisque, mauris nisi lobortis orci, sed bibendum neque lectus ac lectus. Integer porttitor sapien ac ultrices efficitur. Aenean ullamcorper nisl sit amet elit semper blandit. Nullam dictum luctus massa vel mattis. Proin id magna dapibus, tempor sapien ut, gravida mi. Curabitur a commodo sapien. Vestibulum eleifend diam lectus, non tincidunt nibh venenatis ut. Aliquam hendrerit augue id semper rhoncus. Aliquam posuere dignissim purus sit amet dictum. Curabitur id urna non orci porta porttitor eu faucibus dolor. Duis nec bibendum diam. Proin euismod, sem ac dictum scelerisque, nisi diam vulputate ex, vitae gravida metus quam ut nibh.</p>
+
+<p>Nullam faucibus odio neque, nec suscipit est rhoncus a. In lacinia quam sed tristique viverra. Aliquam eu vulputate nulla. Morbi vel aliquam felis. Suspendisse viverra, augue sed tempor lacinia, nisl dui molestie augue, non pulvinar sapien enim vitae risus. Praesent nec nisi ac eros ornare mollis. Cras tempor, nunc sed efficitur consectetur, tortor magna vehicula metus, ac volutpat augue eros vel lectus. Etiam nec urna sit amet elit placerat condimentum et at urna. Donec tortor sapien, volutpat vel convallis et, consequat id orci.</p>
+
+</div>
+
+<div class="widget-tags">
+     
+  <h4 class="sidebar_title">Tags</h4>  
+  
+  <div class="blog-sidebar-panel">
+    <ul class="categories ps-3">
+      
+      
+      <li><a href="#" title="Show articles tagged Cream">Cream</a></li>
+      
+      
+      
+      <li><a href="#" title="Show articles tagged Lotion">Lotion</a></li>
+      
+      
+      
+      <li><a href="#" title="Show articles tagged Makeup Kits">Makeup Kits</a></li>
+      
+      
+      
+      <li><a href="#" title="Show articles tagged Serum">Serum</a></li>
+      
+      
+    </ul>  
+  </div>
+</div>
+</div>
+    </div>
+
+
+
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+    <div class="blog-dtl-pagination page__pagination">
+      <ul class="pg-pagination list-unstyled d-flex justify-content-between align-items-center">
+        <li class="next">
+          <a href="#" aria-label="Next" class="ls-text">PREV</a>
+      </li>
+          
+          <li class="next">
+              <a href="#" aria-label="Next" class="ls-text">NEXT</a>
+          </li>
+      </ul>
+  </div>
+  </div>
+  </div>
+  </div>
+
+
+
+
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-top-area">
+    <div class="row">
+      <div class="col-sm-10 col-md-8 col-lg-7 col-xl-4">
+        <div class="logo-widget">
+          <img src="assets/images/LOGO.png" class="img-fluid logo" alt="" width="147">
+          <h2>Emails that people love</h2>
+            <p>ed dignissim lacinia nunc. Curabitur tortor.
+              Pellentesque nibh. Aenean quam.</p>
+          <div class="subs-form-area">
+              <form class="d-flex align-items-center">
+              <input type="text" name="" placeholder="Enter Email" class="form-control" required>
+              <button type="submit" class="thm-btn">Subscribe</button>
+            </form>
+          </div>
+          <img src="assets/images/icons/payments.svg" alt="" class="mt-md-4 mt-4 mb-5 mb-xl-0">
+        </div>
+      </div>
+      <div class="col-xl-7 offset-xl-1">
+        <div class="row row-cols-2 row-cols-sm-3 row-cols-xl-3">
+          <div class="col">
+            <div class="widget-links">
+              <h4 class="mb-3">Quick Links</h4>
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about-us.html">About Us</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="blogs.html">Blogs</li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="contact-us.html">Contact Us</a></li>
+                
+                </ul>
+            </div>
+          </div>
+          <div class="col">
+            <div class="widget-links">
+              <h4 class="mb-3">Help</h4>
+              <ul>
+                <li><a href="return-policy.html">Return Policy</a></li>
+                <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                <li><a href="shipping-policy.html">Shipping Policy</a></li>
+                <li><a href="terms.html">Terms of Service</a></li>
+                <li><a href="faq.html">FAQ</li>
+                <li><a href="login.html">Account Login</a></li>
+                <li><a href="register.html">Register</a></li>
+                </ul>
+            </div>
+          </div>
+          <div class="col">
+            <div class="widget-links">
+              <h4 class="mb-3">Shop</h4>
+              <ul>
+                <li><a href="make-up-products.html">Make Up</a></li>
+                <li><a href="skin-products.html">Skin Care</a></li>
+                <li><a href="hair-products.html">Hair Care</a></li>
+                <li><a href="bathing-products.html">Body &amp; bath</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+   </div>
+   <div class="footer-bottom-bar">
+    <div class="row">
+      <div class="col-sm-6">
+          <p class="mb-2 mb-sm-0 text-sm-start text-center">© 2024 All Rights Reserved</p>
+      </div>
+      <div class="col-sm-6">
+        <ul class="text-sm-end text-center"><li class="d-inline-block px-2"><a href="privacy-policy.html">Privacy Policy</a> </li>
+          |
+           <li class="d-inline-block px-2"><a href="terms.html">Terms</a></li>
+          </ul>
+      </div>
+    </div>
+   </div>
+  </div>
+</footer>
+
+
+    <div class="search-popup">
+      <div class="search-popup__overlay search-toggler"></div>
+      <!-- /.search-popup__overlay -->
+      <div class="search-popup__content">
+          <form action="#">
+          
+              <input type="text" class="form-control" placeholder="Search Here...">
+              <button type="submit" aria-label="search submit" class="thm-btn">
+                  <img src="assets/images/icons/Search.svg" alt="" class="">
+              </button>
+          </form>
+      </div>
+      <!-- /.search-popup__content -->
+  </div>
+
+    <script src="assets/js/jquery-3.7.1.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/jquery.marquee.min.js"></script>
+    <script src="assets/js/jquery-sidebar-content.js"></script>
+    <script src="assets/js/socialSharing.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/socialSharing.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

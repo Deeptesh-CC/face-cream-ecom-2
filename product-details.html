@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1"
+    />
+    
+    <title>Face Cream</title>
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
+      rel="stylesheet"
+    />
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body>
+
+    <div id="cart-modal" class="xs-sidebar-group info-group info-sidebar">
+      <div class="xs-overlay xs-bg-black"></div>
+      <div class="xs-sidebar-widget">
+          <div class="sidebar-widget-container">
+              <div class="widget-heading">
+                  <a href="#" class="close-side-widget">X</a>
+              </div>
+              <div class="sidebar-textwidget">
+                  <div class="sidebar-info-contents">
+                      <div class="content-inner">
+                        <div id="cart-items">
+                          
+                        </div>
+                        <div id="cart-total-area">
+                          <p class="mb-0 mt-3 p-2 rounded-3 text-center bg-light border">Total: $<strong id="cart-total">0</strong></p>
+                            <a href="checkout.html" class="thm-btn w-100 mt-3">Checkout</a>
+                        </div>
+                      
+                      </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <header id="header">
+    <div class="pbmit-pre-header-wrapper pbmit-bg-color-white">
+      <div class="container">
+          <div class="d-sm-flex justify-content-between">
+              <div class="pbmit-pre-header-left d-md-inline-block">
+                  <ul class="pbmit-contact-info text-center text-sm-start">
+                      <li class="ps-0"><img class="me-2" src="assets/images/icons/Phone call.svg" width="17"><a href="tel:+1 43457 87906">+1 43457 87906</a></li>
+                      
+                  </ul>
+              </div>
+              <div class="pbmit-pre-header-right d-flex">
+                Share Now :
+                  <ul class="pbmit-contact-info social" id="socialShare">
+                  
+                      <!-- <li><a href="#"><img src="assets/images/icons/app.svg" width="17" class="me-1"> App
+                        
+                        </a> </li>
+                      <li><a href="#"><img src="assets/images/icons/locate-store.svg" width="13" class="me-1"> Locate Store
+                        
+                        </a> </li>
+                        <li><a href="#"><img src="assets/images/icons/Gift.svg" width="17" class="me-1"> Gift Vouchers</a> </li>
+                     
+                        <li><a href="#"><img src="assets/images/icons/Headphones.svg" width="17" class="me-1"> Support</a> </li> -->
+                  </ul>
+              </div>
+          </div>
+      </div>
+  </div>
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="assets/images/LOGO.png" class="img-fluid" width="147" />
+      </a>
+      <div class="d-flex navbar-action-btns">
+        <li class="nav-item dropdown profile-menu" style="list-style: none;">
+          <a class="nav-link dropdown-toggle p-2 pt-0 pb-0 ps-0" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <div class="profile-pic">
+                <img src="assets/images/icons/User.svg" alt="Profile Picture" width="25">
+             </div>
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="login.html"><i class="fas fa-sign-in-alt"></i> Log In</a></li>
+        
+            <li><a class="dropdown-item" href="register.html"><i class="fas fa-user"></i> Register</a></li>
+          </ul>
+        </li>
+
+      <a href="#" class="search-toggler">
+        <img
+          src="assets/images/icons/Search.svg"
+          class="img-fluid mx-2"
+          width="25"
+        />
+      </a>
+      <a href="" class="navSidebar-button position-relative">
+        <span id="cart-count" class="cart-count">0</span>
+        <img
+          src="assets/images/icons/Shopping cart.svg"
+          class="img-fluid mx-2"
+          width="25"
+        />
+      </a>
+      </div>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto me-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about-us.html">About Us</a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle default-icon-none" href="products.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+             Products <small><i class="fas fa-chevron-down"></i></small>
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="make-up-products.html">Make Up</a></li>
+              <li><a class="dropdown-item" href="skin-products.html">Skin Care</a></li>
+              <li><a class="dropdown-item" href="hair-products.html">Hair Care</a></li>
+              <li><a class="dropdown-item" href="bathing-products.html">Body & bath</a></li>
+            </ul>
+          </li>    
+              
+          <li class="nav-item">
+            <a class="nav-link" href="blogs.html">        
+          Blogs
+          </a>
+          </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact-us.html">        
+              Contact Us
+              </a>
+              </li>
+        </ul>
+      </div>
+      
+    </div>
+  </nav>
+</header>
+
+
+
+  <section class="main-title-section-wrapper">
+    <div class="main-title-section-container">
+        <div class="container">
+            <div class="main-title-section"><h1>Product Details</h1></div>
+            <div class="breadcrumb"><a href="index.html">Home</a><span class="breadcrumb-default-delimiter"></span><span class="current">Product Details</span></div>        </div>
+    </div>
+    <div class="main-title-section-bg"></div>
+</section>
+
+<section class="section-gap prod-details-area">
+  <div class="container" id="prod-dtl-container">
+    <div id="product-list">
+    <div class="product-item" data-id="1" 
+    data-name="Anti-Age Face Cream" data-price="5.77"
+    data-image="assets/images/single-prod-01.webp">
+<div class="row justify-content-center">
+    <div class="col-lg-6 col-md-8">
+      <div class="prod-gal-area mb-4 mb-lg-0">
+        <div id="prod-gal-sync1" class="owl-carousel owl-theme">
+          <div class="item">
+             <img src="assets/images/single-prod-01.webp" class="img-fluid">
+          </div>
+          <div class="item">
+            <img src="assets/images/single-prod-02.webp" class="img-fluid">
+          </div>
+          <div class="item">
+            <img src="assets/images/single-prod-03.webp" class="img-fluid">
+          </div>
+          
+      </div>
+      
+      <div id="prod-gal-sync2" class="owl-carousel owl-theme">
+        <div class="item">
+          <img src="assets/images/single-prod-01.webp" class="img-fluid">
+       </div>
+       <div class="item">
+         <img src="assets/images/single-prod-02.webp" class="img-fluid">
+       </div>
+       <div class="item">
+         <img src="assets/images/single-prod-03.webp" class="img-fluid">
+       </div>
+      </div>
+      </div>
+      
+    </div>
+    <div class="col-lg-6">
+      <div class="prod-dtl-cont ps-lg-5">
+        <h1 class="prod-title">
+          Anti-Age Face Cream
+        </h1>
+        <p class="product-price lead mt-4">
+          <strike class="text-muted">$6.77</strike>&nbsp; <span class="product-price">$5.77</span></p>
+        <div class="desc">
+          <p>Volutpat lacus laoreet non curabitur gravida arcu. Eget nulla facilisi etiam
+            dignissim. Risus quis varius quam quisque id diam vel quam. Eleifend quam
+          adipiscing vitae proin sagittis nisl rhoncus mattis rhoncus. Sed pulvinar proin
+          gravida hendrerit. Lectus arcu bibendum at pharetra vel.</p>
+        </div>
+        <p class="ls-text my-4">Availability: <span class="thm-color">In stock</span></p>
+        <div class="action-btns-area d-flex align-items-center gap-3">
+            <div class="quantity-controls d-flex align-items-center">
+              <button class="quantity-decrease" data-id="1">-</button>
+              <input type="number" value="1" min="1" class="quantity-input form-control" data-id="1" id="prod-qty-chng">
+              <button class="quantity-increase" data-id="1">+</button>
+            </div>
+          <a href="#" class="thm-btn add-to-cart"><i class="fas fa-cart-plus"></i> Add To Cart</a>
+          <a href="#" class="thm-btn add-to-wish"><img src="assets/images/icons/wishlist.svg" alt=""></a>
+        </div>
+        <p class="ls-text mt-5 mb-4">ESTIMATED DELIVER 5-7 DAYS</p>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-1 row-cols-xl-2">
+          <div class="col">
+          <div class="key-points d-flex align-items-center">
+            <div class="wdt-content-icon me-3 bg-thm-light rounded-3"><span><i>
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+              x="0px" y="0px" viewBox="0 0 60 38.1" xml:space="preserve" class="">
+              <g>	<path d="M59.3,20.2l-5.4-1.9L49.3,7.1c-0.2-0.4-0.5-0.6-0.9-0.6h-9.6V1c0-0.6-0.4-1-1-1H9.1c-0.6,0-1,0.4-1,1v3.4H5.7  c-0.6,0-1,0.4-1,1s0.4,1,1,1h3.5c0,0,0,0,0,0s0,0,0,0h5.4c0.6,0,1-0.4,1-1s-0.4-1-1-1h-4.4V2h26.6v16.1H10.1v-2.8h2.7  c0.6,0,1-0.4,1-1s-0.4-1-1-1H7.3c-0.6,0-1,0.4-1,1s0.4,1,1,1h0.8v2.8H5.4c-0.6,0-1,0.4-1,1v12.8c0,0.6,0.4,1,1,1h3.3  c0.5,2.9,3,5.1,6.1,5.1c3,0,5.6-2.2,6.1-5.1h17c0,0,0,0,0,0s0,0,0,0h4.8c0.5,2.9,3,5.1,6.1,5.1s5.6-2.2,6.1-5.1H59c0.6,0,1-0.4,1-1  V21.1C60,20.7,59.7,20.3,59.3,20.2z M47.7,8.5l4,9.6H38.8V8.5H47.7z M6.4,20.1h2.7h27.6v10.8h-16c-0.5-2.9-3-5.1-6.1-5.1  c-3,0-5.6,2.2-6.1,5.1H6.4V20.1z M14.7,36.1c-2.3,0-4.1-1.9-4.1-4.1s1.9-4.1,4.1-4.1c2.3,0,4.1,1.8,4.1,4.1c0,0,0,0,0,0s0,0,0,0  C18.9,34.2,17,36.1,14.7,36.1z M48.7,36.1c-2.3,0-4.1-1.8-4.1-4.1c0,0,0,0,0,0s0,0,0,0c0-2.3,1.9-4.1,4.1-4.1  c2.3,0,4.1,1.8,4.1,4.1c0,0,0,0,0,0s0,0,0,0C52.8,34.2,50.9,36.1,48.7,36.1z M58,30.9h-3.3c-0.5-2.9-3-5.1-6.1-5.1  s-5.6,2.2-6.1,5.1h-3.8V20.1H53l5,1.7V30.9z"></path>	<path d="M48.7,38.2c-3,0-5.6-2.2-6.1-5.1h-4.7c0,0-0.1,0-0.1,0l-16.9,0c-0.5,3-3.1,5.1-6.1,5.1S9.1,36,8.6,33H5.4  c-0.6,0-1.1-0.5-1.1-1.1V19.1c0-0.6,0.5-1.1,1.1-1.1H8v-2.6H7.3c-0.6,0-1.1-0.5-1.1-1.1s0.5-1.1,1.1-1.1h5.5c0.6,0,1.1,0.5,1.1,1.1  s-0.5,1.1-1.1,1.1h-2.6V18h26.4V2.1H10.2v2.2h4.3c0.6,0,1.1,0.5,1.1,1.1s-0.5,1.1-1.1,1.1H5.7C5,6.5,4.6,6,4.6,5.4S5,4.3,5.7,4.3H8  V1c0-0.6,0.5-1.1,1.1-1.1h28.6c0.6,0,1.1,0.5,1.1,1.1v5.4h9.5c0.4,0,0.8,0.3,1,0.7L54,18.2l5.4,1.8c0.4,0.2,0.7,0.6,0.7,1v10.8  c0,0.6-0.5,1.1-1.1,1.1h-4.2C54.3,36,51.7,38.2,48.7,38.2z M37.8,32.8h4.9l0,0.1c0.5,2.9,3,5.1,6,5.1s5.5-2.1,6-5.1l0-0.1H59  c0.5,0,0.9-0.4,0.9-0.9V21.1c0-0.4-0.2-0.7-0.6-0.9l-5.5-1.9l0,0L49.2,7.2c-0.1-0.3-0.5-0.6-0.8-0.6h-9.7V1c0-0.5-0.4-0.9-0.9-0.9  H9.1C8.7,0.1,8.2,0.5,8.2,1v3.5H5.7c-0.5,0-0.9,0.4-0.9,0.9s0.4,0.9,0.9,0.9h8.9c0.5,0,0.9-0.4,0.9-0.9S15,4.5,14.5,4.5H10V1.9  h26.8v16.3H10v-3h2.8c0.5,0,0.9-0.4,0.9-0.9s-0.4-0.9-0.9-0.9H7.3c-0.5,0-0.9,0.4-0.9,0.9s0.4,0.9,0.9,0.9h0.9v3H5.4  c-0.5,0-0.9,0.4-0.9,0.9v12.8c0,0.5,0.4,0.9,0.9,0.9h3.4l0,0.1c0.5,2.9,3,5.1,6,5.1c3,0,5.5-2.1,6-5.1l0-0.1H37.8z M48.7,36.2  c-2.3,0-4.2-1.9-4.2-4.2v0c0-2.3,1.9-4.2,4.2-4.2c2.3,0,4.2,1.9,4.2,4.2v0C52.9,34.3,51,36.2,48.7,36.2z M48.7,27.9  c-2.2,0-4,1.8-4,4c0,0,0,0.1,0,0.1c0,2.2,1.8,4,4,4c2.2,0,4-1.8,4-4c0,0,0-0.1,0-0.1C52.7,29.7,50.9,27.9,48.7,27.9z M14.7,36.2  c-2.3,0-4.2-1.9-4.2-4.2s1.9-4.2,4.2-4.2c2.3,0,4.2,1.9,4.2,4.2l0,0c0,0,0,0,0,0C19,34.3,17.1,36.2,14.7,36.2z M14.7,27.9  c-2.2,0-4,1.8-4,4s1.8,4,4,4c2.2,0,4-1.8,4-4l0-0.1C18.8,29.7,17,27.9,14.7,27.9z M58.1,31h-3.5l0-0.1c-0.5-2.9-3-5.1-6-5.1  s-5.5,2.1-6,5.1l0,0.1h-4V20L53,20l5.1,1.7V31z M54.8,30.8h3.1v-8.9L53,20.2H38.9v10.6h3.6c0.5-3,3.1-5.1,6.1-5.1  S54.3,27.9,54.8,30.8z M36.9,31H20.7l0-0.1c-0.5-2.9-3-5.1-6-5.1S9.3,28,8.8,31l0,0.1H6.3V20h30.6V31z M20.9,30.8h15.8V20.2H6.5  v10.6h2.1c0.5-3,3.1-5.1,6.1-5.1C17.8,25.7,20.3,27.9,20.9,30.8z M51.8,18.2H38.7V8.4h9.1l0,0.1L51.8,18.2z M38.9,18h12.6l-3.9-9.4  h-8.7V18z"></path></g><g>	<path d="M1,10.8h11.3c0.6,0,1-0.4,1-1s-0.4-1-1-1H1c-0.6,0-1,0.4-1,1S0.4,10.8,1,10.8z"></path>	<path d="M12.3,10.9H1c-0.6,0-1.1-0.5-1.1-1.1S0.4,8.7,1,8.7h11.3c0.6,0,1.1,0.5,1.1,1.1S12.9,10.9,12.3,10.9z M1,8.9  c-0.5,0-0.9,0.4-0.9,0.9s0.4,0.9,0.9,0.9h11.3c0.5,0,0.9-0.4,0.9-0.9s-0.4-0.9-0.9-0.9H1z"></path></g></svg></i></span></div>
+            <div class="wdt-content-elements-group wdt-media-group">
+              <div class="wdt-content-subtitle ls-text">Free Shippping Worldwide</div>
+            </div>
+          </div>
+          </div>
+          <div class="col">
+            <div class="key-points d-flex align-items-center">
+              <div class="wdt-content-icon me-3 bg-thm-light rounded-3"><span><i>
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 81 81" xml:space="preserve"><g>	<path d="M40.5,0.5c-9.1,0-18,3.1-25.1,8.9l0-7.9c0-0.6-0.4-1-1-1c0,0,0,0,0,0c-0.6,0-1,0.5-1,1l0,10c0,0.6,0.4,1,1,1l10,0  c0,0,0,0,0,0c0.6,0,1-0.4,1-1s-0.4-1-1-1l-7.2,0c6.6-5.2,14.9-8,23.3-8c21,0,38,17,38,38c0,7.6-2.2,15-6.5,21.2  c-0.3,0.5-0.2,1.1,0.3,1.4c0.2,0.1,0.4,0.2,0.6,0.2c0.3,0,0.6-0.2,0.8-0.4c4.5-6.6,6.8-14.3,6.8-22.4C80.5,18.4,62.6,0.5,40.5,0.5z  "></path>	<path d="M72.8,63.8c-0.3,0-0.6-0.1-0.8-0.3c-0.7-0.5-0.9-1.4-0.4-2.1c4.2-6.2,6.4-13.5,6.4-21C78,19.8,61.2,3,40.5,3  C32.7,3,25,5.5,18.7,10l5.7,0c0.4,0,0.8,0.2,1.1,0.4c0.3,0.3,0.4,0.7,0.4,1.1c0,0.8-0.7,1.5-1.5,1.5l-10,0c-0.8,0-1.5-0.7-1.5-1.5  l0-10c0-0.4,0.2-0.8,0.4-1.1C13.6,0.2,14,0,14.4,0c0.8,0,1.5,0.7,1.5,1.5l0,6.8C22.9,3,31.6,0,40.5,0C62.8,0,81,18.2,81,40.5  c0,8.1-2.4,15.9-6.9,22.6C73.8,63.6,73.3,63.8,72.8,63.8z M40.5,2C61.7,2,79,19.3,79,40.5c0,7.7-2.3,15.2-6.6,21.5  c-0.2,0.2-0.1,0.5,0.1,0.7c0.2,0.1,0.5,0.1,0.7-0.1c4.4-6.5,6.7-14.2,6.7-22.1C80,18.7,62.3,1,40.5,1c-9,0-17.8,3.1-24.8,8.8  l-0.8,0.7l0-8.9c0-0.4-0.6-0.6-0.9-0.4c-0.1,0.1-0.1,0.2-0.1,0.4l0,10c0,0.3,0.2,0.5,0.5,0.5l10,0c0.3,0,0.5-0.2,0.5-0.5  c0-0.1-0.1-0.3-0.1-0.4c-0.1-0.1-0.2-0.1-0.4-0.1l-8.7,0l1.1-0.9C23.6,4.9,32,2,40.5,2z"></path></g><g>	<path d="M8.7,17.9c-0.5-0.3-1.1-0.2-1.4,0.3c-4.5,6.6-6.8,14.3-6.8,22.4c0,22.1,17.9,40,40,40c9.1,0,18-3.1,25-8.8l0,7.8  c0,0.6,0.4,1,1,1c0,0,0,0,0,0c0.6,0,1-0.4,1-1l0-10c0-0.6-0.4-1-1-1h-10c-0.6,0-1,0.4-1,1s0.4,1,1,1h7.3c-6.7,5.2-14.8,8-23.3,8  c-21,0-38-17-38-38c0-7.6,2.2-15,6.5-21.2C9.3,18.8,9.2,18.2,8.7,17.9z"></path>	<path d="M66.6,81c-0.8,0-1.5-0.7-1.5-1.5l0-6.8C58,78.1,49.4,81,40.5,81C18.2,81,0,62.8,0,40.5c0-8.1,2.4-15.9,6.9-22.6  C7.4,17.2,8.3,17,9,17.5l0,0c0.3,0.2,0.6,0.6,0.6,1s0,0.8-0.2,1.1C5.2,25.7,3,33,3,40.5C3,61.2,19.8,78,40.5,78  c7.8,0,15.5-2.5,21.8-7h-5.8c-0.8,0-1.5-0.7-1.5-1.5s0.7-1.5,1.5-1.5h10c0.8,0,1.5,0.7,1.5,1.5l0,10c0,0.4-0.2,0.8-0.4,1.1  C67.3,80.8,67,81,66.6,81z M66,70.6l0,8.9c0,0.4,0.6,0.6,0.9,0.4c0.1-0.1,0.1-0.2,0.1-0.4l0-10c0-0.3-0.2-0.5-0.5-0.5h-10  c-0.3,0-0.5,0.2-0.5,0.5s0.2,0.5,0.5,0.5h8.7l-1.1,0.9C57.4,76.1,49,79,40.5,79C19.3,79,2,61.7,2,40.5C2,32.8,4.3,25.3,8.6,19  c0.1-0.1,0.1-0.2,0.1-0.4s-0.1-0.2-0.2-0.3c-0.2-0.2-0.5-0.1-0.7,0.1C3.3,24.9,1,32.6,1,40.5C1,62.3,18.7,80,40.5,80  c9,0,17.8-3.1,24.7-8.7L66,70.6z"></path></g><g>	<path d="M60.6,61.6c0.6,0,1-0.4,1-1V20.4c0-0.6-0.4-1-1-1H20.4c-0.6,0-1,0.4-1,1v40.2c0,0.6,0.4,1,1,1H60.6z M34.7,21.4h11.6v17.5  H34.7V21.4z M21.4,21.4h11.3v18.5c0,0.6,0.4,1,1,1h13.6c0.6,0,1-0.4,1-1V21.4h11.3v38.2H21.4V21.4z"></path>	<path d="M60.6,62.1H20.4c-0.8,0-1.5-0.7-1.5-1.5V20.4c0-0.8,0.7-1.5,1.5-1.5h40.2c0.8,0,1.5,0.7,1.5,1.5v40.2  C62.1,61.4,61.4,62.1,60.6,62.1z M20.4,19.9c-0.3,0-0.5,0.2-0.5,0.5v40.2c0,0.3,0.2,0.5,0.5,0.5h40.2c0.3,0,0.5-0.2,0.5-0.5V20.4  c0-0.3-0.2-0.5-0.5-0.5H20.4z M60.1,60.1H20.9V20.9h12.3v19c0,0.3,0.2,0.5,0.5,0.5h13.6c0.3,0,0.5-0.2,0.5-0.5v-19h12.3V60.1z   M21.9,59.1h37.2V21.9H48.8v18c0,0.8-0.7,1.5-1.5,1.5H33.7c-0.8,0-1.5-0.7-1.5-1.5v-18H21.9V59.1z M46.8,39.4H34.2V20.9h12.6V39.4z   M35.2,38.4h10.6V21.9H35.2V38.4z"></path></g></svg>  
+              </i></span></div>
+              <div class="wdt-content-elements-group wdt-media-group">
+                <div class="wdt-content-subtitle ls-text">Free Returns Upto 30 Days</div>
+              </div>
+            </div>
+            </div>
+            <div class="col">
+              <div class="key-points d-flex align-items-center">
+                <div class="wdt-content-icon me-3 bg-thm-light rounded-3"><span><i>
+                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 93 91.8" xml:space="preserve"><g>	<g>		<path d="M62.1,45.2L46.7,29.7c-0.6-0.6-1.5-0.6-2.1,0l-3.5,3.5c-0.6,0.6-0.5,1.6,0.1,2.1c0.6,0.5,1.5,0.5,2,0l2.4-2.4l13.3,13.3   l-2.6,2.6c-0.6,0.6-0.6,1.5,0,2.1c0.3,0.3,0.7,0.4,1.1,0.4c0.4,0,0.8-0.2,1.1-0.4l3.7-3.7C62.7,46.7,62.7,45.8,62.1,45.2   C62.1,45.2,62.1,45.2,62.1,45.2z"></path>	</g>	<g>		<path d="M28.7,76.4l-2.4,2.4L13,65.5l2.6-2.6c0.6-0.6,0.6-1.5,0-2.1c-0.6-0.6-1.5-0.6-2.1,0l-3.7,3.7c-0.6,0.6-0.6,1.5,0,2.1   c0,0,0,0,0,0L25.3,82c0.6,0.6,1.5,0.6,2.1,0l3.5-3.5c0.6-0.6,0.6-1.5,0-2.1C30.3,75.8,29.3,75.8,28.7,76.4z"></path>	</g>	<g>		<path d="M36,45.1c-5.9,0-10.8,4.8-10.8,10.8c0,5.9,4.8,10.8,10.8,10.8s10.8-4.8,10.8-10.8c0-2.9-1.1-5.6-3.2-7.6   C41.6,46.2,38.8,45.1,36,45.1z M41.5,61.4c-3,3-8,3-11,0c-3-3-3-8,0-11c3-3,7.9-3,11,0C44.5,53.4,44.6,58.3,41.5,61.4   C41.5,61.3,41.5,61.3,41.5,61.4z"></path>	</g>	<g>		<path d="M92.8,35.5c-2-21.5-21.2-37.3-42.7-35.3C31.4,2,16.6,16.8,14.8,35.6l-2.3-2.2c-0.6-0.6-1.5-0.6-2.1,0c0,0,0,0,0,0   c-0.6,0.6-0.6,1.5,0,2.1l4.6,4.6l0,0c0.1,0.1,0.3,0.3,0.5,0.3l0,0c0.4,0.1,0.7,0.1,1.1,0l0,0c0.2-0.1,0.3-0.2,0.5-0.3l0,0l4.6-4.6   c0.6-0.6,0.6-1.5,0.1-2.1s-1.5-0.6-2.1-0.1c0,0-0.1,0-0.1,0.1l-1.9,1.9C19.9,15.4,37.8,1,57.6,3.1c17.1,1.8,30.6,15.5,32.2,32.6   L90,39c0,20-16.2,36.2-36.1,36.2c-3.1,0-6.2-0.4-9.1-1.2l26.8-26.8c0.3-0.3,0.4-0.7,0.4-1.1c0-0.4-0.2-0.8-0.4-1.1L46.7,20.3   c-0.6-0.6-1.5-0.6-2.1,0L0.4,64.5c-0.6,0.6-0.6,1.5,0,2.1c0,0,0,0,0,0l24.8,24.8c0.6,0.6,1.5,0.6,2.1,0l14.9-14.9   c20.7,6.4,42.6-5.3,49-25.9C92.4,46.8,93,42.9,93,39L92.8,35.5z M26.3,88.2L3.6,65.5l42-42l22.7,22.7L26.3,88.2z"></path>	</g></g></svg>
+                </i></span></div>
+                <div class="wdt-content-elements-group wdt-media-group">
+                  <div class="wdt-content-subtitle ls-text">Money Back Gurantee</div>
+                </div>
+              </div>
+              </div>
+      </div>
+         </div>
+      </div>
+    </div>
+  </div>
+</div>
+  </div>
+
+
+  </div>
+</section>
+
+  <section class="section-gap section-gap-bottom dtl-tab-area">
+    <div class="container">
+      <div class="p-3 p-md-4 bg-thm-light rounded-3">
+      <div class="row">
+        <div class="col-12">
+          <ul class="nav nav-tabs" role="tablist">
+            <li class="nav-item" role="presentation">
+              <a class="nav-link active" id="simple-tab-0" data-bs-toggle="tab" href="#simple-tabpanel-0" role="tab" aria-controls="simple-tabpanel-0" aria-selected="true">Description</a>
+            </li>
+            <li class="nav-item" role="presentation">
+              <a class="nav-link" id="simple-tab-1" data-bs-toggle="tab" href="#simple-tabpanel-1" role="tab" aria-controls="simple-tabpanel-1" aria-selected="false">Additional information</a>
+            </li>
+          </ul>
+          <div class="tab-content pt-5" id="tab-content">
+            <div class="tab-pane active" id="simple-tabpanel-0" role="tabpanel" aria-labelledby="simple-tab-0">
+              In dictum non consectetur a erat nam at lectus urna. Pulvinar mattis nunc sed blandit libero
+              volutpat sed cras ornare. Nibh sit amet commodo nulla. Urna id volutpat lacus laoreet.
+              In nisl nisi scelerisque eu. Imperdiet massa tincidunt nunc pulvinar sapien et. Eu turpis
+              egestas pretium aenean pharetra. Neque aliquam vestibulum morbi blandit cursus. Id cursus
+              metus aliquam eleifend mi in nulla posuere sollicitudin. Massa massa ultricies mi quis
+              hendrerit dolor. In egestas erat imperdiet sed euismod nisi. Sit amet volutpat consequat mauris.
+              Porttitor eget dolor morbi non arcu. Elementum pulvinar etiam non quam lacus. Eget mauris
+              pharetra et ultrices. Nunc consequat interdum varius sit. Duis ut diam quam nulla porttitor
+              massa id. Aenean vel elit scelerisque mauris pellentesque pulvinar pellentesque. Nisi vitae
+              suscipit tellus mauris. Sagittis id consectetur purus ut. Orci a scelerisque purus semper eget
+              duis at tellus. Mattis ullamcorper velit sed ullamcorper morbi tincidunt ornare massa. Lacus
+              vestibulum sed arcu non. Nec sagittis aliquam malesuada bibendum. 
+
+              <div class="wdt-heading-holder mt-4" id="wdt-heading-d1b8d61"><h4>Key Ingredient:</h4><div class="wdt-heading-content-wrapper">Tincidunt tortor aliquam nulla facilisi cras fermentum odio. Pellentesque diam volutpat commodo sed egestas egestas. Tortor at auctor urna nunc. Porta nibh venenatis cras sed felis eget velit aliquet sagittis. Nibh sit amet commodo nulla. Urna id volutpat lacus laoreet.</div></div>
+             
+              
+            </div>
+            <div class="tab-pane" id="simple-tabpanel-1" role="tabpanel" aria-labelledby="simple-tab-1">
+              <table class="table-responsive w-100">
+                <tbody><tr class="">
+                <th class="">Size</th>
+                <td class=""><p class="mb-0">100ml, 150ml, 250ml</p>
+          </td>
+              </tr>
+                <tr class="">
+                <th class="">Skin Type</th>
+                <td class=""><p class="mb-0">Dry, Normal, Oily</p>
+          </td>
+              </tr>
+                <tr class="">
+                <th class="">Product Type</th>
+                <td class=""><p class="mb-0">Cream, Oil, Spray</p>
+          </td>
+              </tr>
+            </tbody></table>
+            </div>
+          </div>
+        </div>
+      </div>
+     </div>
+    </div>
+  </section>
+
+
+  <footer>
+    <div class="container">
+      <div class="footer-top-area">
+      <div class="row">
+        <div class="col-sm-10 col-md-8 col-lg-7 col-xl-4">
+          <div class="logo-widget">
+            <img src="assets/images/LOGO.png" class="img-fluid logo" alt="" width="147">
+            <h2>Emails that people love</h2>
+              <p>ed dignissim lacinia nunc. Curabitur tortor.
+                Pellentesque nibh. Aenean quam.</p>
+            <div class="subs-form-area">
+                <form class="d-flex align-items-center">
+                <input type="text" name="" placeholder="Enter Email" class="form-control" required>
+                <button type="submit" class="thm-btn">Subscribe</button>
+              </form>
+            </div>
+            <img src="assets/images/icons/payments.svg" alt="" class="mt-md-4 mt-4 mb-5 mb-xl-0">
+          </div>
+        </div>
+        <div class="col-xl-7 offset-xl-1">
+          <div class="row row-cols-2 row-cols-sm-3 row-cols-xl-3">
+            <div class="col">
+              <div class="widget-links">
+                <h4 class="mb-3">Quick Links</h4>
+                <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="about-us.html">About Us</a></li>
+                  <li><a href="products.html">Products</a></li>
+                  <li><a href="blogs.html">Blogs</li>
+                  <li><a href="faq.html">FAQ</a></li>
+                  <li><a href="contact-us.html">Contact Us</a></li>
+                  
+                  </ul>
+              </div>
+            </div>
+            <div class="col">
+              <div class="widget-links">
+                <h4 class="mb-3">Help</h4>
+                <ul>
+                  <li><a href="return-policy.html">Return Policy</a></li>
+                  <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                  <li><a href="shipping-policy.html">Shipping Policy</a></li>
+                  <li><a href="terms.html">Terms of Service</a></li>
+                  <li><a href="faq.html">FAQ</li>
+                  <li><a href="login.html">Account Login</a></li>
+                  <li><a href="register.html">Register</a></li>
+                  </ul>
+              </div>
+            </div>
+            <div class="col">
+              <div class="widget-links">
+                <h4 class="mb-3">Shop</h4>
+                <ul>
+                  <li><a href="make-up-products.html">Make Up</a></li>
+                  <li><a href="skin-products.html">Skin Care</a></li>
+                  <li><a href="hair-products.html">Hair Care</a></li>
+                  <li><a href="bathing-products.html">Body &amp; bath</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+     </div>
+     <div class="footer-bottom-bar">
+      <div class="row">
+        <div class="col-sm-6">
+            <p class="mb-2 mb-sm-0 text-sm-start text-center">© 2024 All Rights Reserved</p>
+        </div>
+        <div class="col-sm-6">
+          <ul class="text-sm-end text-center"><li class="d-inline-block px-2"><a href="privacy-policy.html">Privacy Policy</a> </li>
+            |
+             <li class="d-inline-block px-2"><a href="terms.html">Terms</a></li>
+            </ul>
+        </div>
+      </div>
+     </div>
+    </div>
+  </footer>
+
+
+    <div class="search-popup">
+      <div class="search-popup__overlay search-toggler"></div>
+      <!-- /.search-popup__overlay -->
+      <div class="search-popup__content">
+          <form action="#">
+          
+              <input type="text" class="form-control" placeholder="Search Here...">
+              <button type="submit" aria-label="search submit" class="thm-btn">
+                  <img src="assets/images/icons/Search.svg" alt="" class="">
+              </button>
+          </form>
+      </div>
+      <!-- /.search-popup__content -->
+  </div>
+
+    <script src="assets/js/jquery-3.7.1.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/jquery.marquee.min.js"></script>
+    <script src="assets/js/jquery-sidebar-content.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/socialSharing.js"></script>
+    <script src="assets/js/main.js"></script>
+
+
+  </body>
+</html>
